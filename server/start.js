@@ -39,8 +39,10 @@ if (module === require.main) {
   const PORT = 1337
 
   const db = require('../db')
-  db.sync()
+  const seed = require('./seed')
+  db.sync({force: true})
   .then(() => {
+    seed()
     console.log('db synced')
     app.listen(PORT, () => console.log(`server listening on port ${PORT}`))
   });

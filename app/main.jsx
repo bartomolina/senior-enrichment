@@ -1,14 +1,6 @@
 'use strict'
 import React from 'react'
-import {render} from 'react-dom'
-import { Provider } from 'react-redux'
+import { render } from 'react-dom'
+import Root from './components/index.jsx'
 
-import store from './store'
-import Navbar from './components/Navbar'
-
-render (
-  <Provider store={store}>
-    <Navbar />
-  </Provider>,
-  document.getElementById('main')
-)
+render((<Root />), document.getElementById('main'))

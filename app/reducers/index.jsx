@@ -1,6 +1,9 @@
 import { combineReducers } from 'redux'
+import campuses from './campuses'
 
-const initialState = {}
+const initialState = {
+  campuses: [{ name: 'campus1', id:1 }, { name: 'campus2', id:2 }]
+}
 
 const rootReducer = function(state = initialState, action) {
   switch(action.type) {
@@ -8,4 +11,9 @@ const rootReducer = function(state = initialState, action) {
   }
 };
 
-export default rootReducer
+const reducer = combineReducers({
+  campuses,
+  rootReducer
+})
+
+export default reducer
