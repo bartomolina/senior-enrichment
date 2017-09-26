@@ -16,6 +16,7 @@ Please change it in ${__dirname}/package.json
 ********************************************************************`
 
 const reasonableName = /^[\w\-]+$/
+console.log('name')
 if (!reasonableName.test(pkg.name)) {
   console.error(chalk.red(nameError))
 }
