@@ -14,4 +14,8 @@ api.get('/campuses', (req, res, next) => {
 	.catch(next)
 })
 
+api.post('/campuses', (req, res, next) => {
+	Campus.create
+})
+
 module.exports = api

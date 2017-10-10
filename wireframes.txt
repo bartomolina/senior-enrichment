@@ -1,0 +1,18 @@
+Home
+    ...
+Campuses
+    New campus form
+    Campus panels
+Single Campus
+    Students list --> Single Student
+    Edit campus
+    Delete campus
+    Remove Student
+Students
+    New Student form
+    All students list
+Single Studend
+    Campus --> Single Campus
+    Edit campus
+    Edit info
+    Delete student
